@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #32013f;
+  background-color: #f1f2f2;
+  font: 20px/26px "Raleway", sans-serif;
+  background-image: url("../public/images/backgroundmt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btn-4 {
+  border-radius: 50px;
+  border: 3px solid #fff;
+  color: #fff;
+  overflow: hidden;
+}
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.btn-4a:before {
+  left: 130%;
+  top: 0;
+}
+.btn-4:before {
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:before{
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+.btn:hover{
+  background-color: #7c7a7a;
+  transform-style: preserve-3d;
+  transition: all 0.3s;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1500;
+  color: #f1f2f2;
+  text-shadow: 1px 1px 0px #777777;
+  padding: 20px;
+  margin-top: 130px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4e4d4d;
+}
+
+input {
+  font: 16px/26px "Raleway", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.root {
+  border-radius: 10px;
+}
+
+.form-wrap {
+  position: relative;
+  width: 320px;
+  margin: 3em auto;
+  box-shadow: 0px 1px 4px #bebebe;
+  -webkit-box-shadow: 0px 1px 8px #bebebe;
+  -moz-box-shadow: 0px 1px 8px #bebebe;
+  backdrop-filter: blur(10px) opacity(0.8) grayscale(50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.form-wrap::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+}
+
+.form-wrap .tabs {
+  overflow: hidden;
+}
+
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+
+.form-wrap .tabs h3 a {
+  padding: 0.5em 0;
+  text-align: center;
+  font-weight: 400;
+  background-color: #e6e7e8;
+  display: block;
+  color: #030202;
+
+}
+
+.form-wrap .tabs h3 a.active {
+  background-color: #fff;
+}
+
+.form-wrap .tabs-content {
+  padding: 1.5em;
+}
+
+.form-wrap .tabs-content div[id$="tab-content"] {
+  display: none;
+}
+
+.form-wrap .tabs-content .active {
+  display: block !important;
+}
+
+.form-wrap form .input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em 0;
+  padding-right: 2em;
+  width: 100%;
+}
+
+.form-wrap form .button {
+  width: 100%;
+  padding: 0.8em 0 10px 0.8em;
+  background-color: #bebebe;
+  border: none;
+  color: #270707;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.form-wrap form .button:hover {
+  color: #e6e7e8;
+  background-color: #4e4d4d;
+  backdrop-filter: blur(5px) opacity(1) grayscale(0%);
+}
+
+.form-wrap form label[for] {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.form-wrap form label[for]:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #cfcfcf;
+  width: 17px;
+  height: 17px;
+  top: 0px;
+  left: -14px;
+}
+
+.form-wrap form label[for]:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background-color: transparent;
+  top: 4px;
+  left: -10px;
+  border: 3px solid #28a55f;
+  border-top: none;
+  border-right: none;
+}
